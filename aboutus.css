@@ -1,0 +1,261 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FDFBF9;
+  color: #3A3A3A;
+  
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0F1C1E;
+  padding: 16px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+}
+
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #F2C47C;
+}
+.login a {
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color:#F2C47C ;
+    border-radius: 25px;
+    color:#0F1C1E ;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-links a.disabled {
+  color: #777;
+  pointer-events: none;
+  cursor: default;
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+/* ===== About Us Page Styles ===== */
+.about-section {
+  padding: 60px 20px;
+  background-color: #FDFBF9;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(resources/luxury-architecture-exterior-design.jpg);
+  background-size: cover;
+  height: 85vh;
+  
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0F1C1E;
+}
+
+.about-intro {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.about-box {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+}
+
+.about-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #D6A45E;
+}
+
+.about-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.footer-container {
+  background-color: #0F1C1E;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  width: 100%; 
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color:#D6A45E;
+  font-family: 'poppins';
+  background-color: #1c2331;
+  flex-wrap: wrap;
+  
+}
+
+.footer-social span {
+  font-size: 16px;
+  margin-left: 50px;
+}
+.social-icons{
+  margin-right: 50px ;
+}
+
+.social-icons a {
+  color: white;
+  margin-left: 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color:#0F1C1E ;
+}
+
+.footer-box {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+.logo-footer {
+  height: 150px;
+  width: auto;
+  
+}
+
+.footer-box h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+}
+
+.footer-box h4::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #ffcc00;
+  margin-top: 5px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin: 10px 0;
+}
+
+.footer-box ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-box p {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 8px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-box i {
+  margin-right: 8px;
+  color: #ffcc00;
+}
